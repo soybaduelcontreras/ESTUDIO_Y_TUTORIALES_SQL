@@ -1,0 +1,13 @@
+/*
+SELECT:  Para recuperar y consultar datos en SQL, usas principalmente la sentencia SELECT, 
+         especificando las columnas y la tabla de origen con FROM.
+*/
+
+-- Obtiene todos los datos de la tabla "users"
+SELECT * FROM users;
+
+-- Obtiene todos los nombres de la tabla "users"
+SELECT name FROM users;
+
+-- Obtiene todos los identificadores y nombres de la tabla "users"
+SELECT user_id, name FROM users;
