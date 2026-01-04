@@ -1,0 +1,18 @@
+//Primer ejemplo de Programa :
+/* 
+   Este es un programa simple de Java-
+   Ejemplo Java.
+*/
+
+                -- PROGRAMA --
+---------------------------------------------------------
+class ejemplo {
+    // Un programa Java empieza con una llamada main() .
+
+    public static void main(String[] args) {
+        System.out.println("Java dirige Web") ;
+
+    }
+}
+-----------------------------------------------------------
+
