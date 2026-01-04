@@ -1,0 +1,17 @@
+/*
+NOT, AND, OR: En SQL, los operadores AND, OR y NOT se usan en la cláusula WHERE para combinar 
+              y filtrar múltiples condiciones en una consulta, permitiendo búsquedas más precisas 
+              y complejas: 
+              AND requiere que todas las condiciones sean verdaderas, 
+              OR que se cumpla al menos una, 
+              NOT invierte el resultado de una condición, excluyendo los registros que la cumplen. 
+*/
+
+-- Obtiene todos datos de la tabla "users" con email distinto a sara@gmail.com
+SELECT * FROM users WHERE NOT email = 'sara@gmail.com';
+
+-- Obtiene todos datos de la tabla "users" con email distinto a sara@gmail.com y edad igual a 15
+SELECT * FROM users WHERE NOT email = 'sara@gmail.com' AND age = 15;
+
+-- Obtiene todos datos de la tabla "users" con email distinto a sara@gmail.com o edad igual a 15
+SELECT * FROM users WHERE NOT email = 'sara@gmail.com' OR age = 15;
