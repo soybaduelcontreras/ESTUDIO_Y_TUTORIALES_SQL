@@ -1,0 +1,13 @@
+/*
+DISTINCT: En SQL se utiliza para seleccionar solo valores únicos de una columna o conjunto de columnas, 
+          eliminando filas duplicadas del resultado de una consulta SELECT,
+          lo que es útil para obtener listas sin repeticiones de categorías,
+          nombres o cualquier otro dato que necesite ser único en el informe o análisis.
+          Se coloca justo después de SELECT y antes de los nombres de las columnas. 
+*/
+  
+-- Obtiene todos los datos distintos entre sí de la tabla "users"
+   SELECT DISTINCT * FROM users;
+
+-- Obtiene todos los valores distintos referentes al atributo edad de la tabla "users"
+   SELECT DISTINCT age FROM users;
