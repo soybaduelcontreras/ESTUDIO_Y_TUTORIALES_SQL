@@ -1,0 +1,19 @@
+/*
+WHERE: La cláusula WHERE en SQL sirve para filtrar registros en una base de datos,
+       permitiéndote seleccionar solo las filas que cumplen una condición específica;
+       se usa en comandos como SELECT, UPDATE o DELETE para acotar resultados,
+       haciendo las consultas más precisas y eficientes,
+       sin devolver todos los datos de la tabla, sino solo los que te interesan.  
+*/
+
+-- Filtra todos los datos de la tabla "users" con edad igual a 15
+SELECT * FROM users WHERE age = 15;
+
+-- Filtra todos los nombres de la tabla "users" con edad igual a 15
+SELECT name FROM users WHERE age = 15;
+
+-- Filtra todos los nombres distintos de la tabla "users" con edad igual a 15
+SELECT DISTINCT name FROM users WHERE age = 15;
+
+-- Filtra todas las edades distintas de la tabla "users" con edad igual a 15
+SELECT DISTINCT age FROM users WHERE age = 15;
