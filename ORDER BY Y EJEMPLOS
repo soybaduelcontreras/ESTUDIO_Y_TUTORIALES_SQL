@@ -1,0 +1,22 @@
+/*
+ORDER BY: La cláusula ORDER BY en SQL se utiliza para ordenar las filas de los resultados de una consulta 
+          en orden ascendente (ASC, por defecto) o descendente (DESC),
+          basándose en los valores de una o varias columnas, mejorando la legibilidad y el análisis de los datos.
+          Es una cláusula opcional y generalmente es el último elemento en una instrucción SQL,
+          permitiendo un control preciso sobre cómo se presentan los datos. 
+*/
+
+-- Ordena todos los datos de la tabla "users" por edad (ascendente por defecto)
+SELECT * FROM users ORDER BY age;
+
+-- Ordena todos los datos de la tabla "users" por edad de manera ascendente
+SELECT * FROM users ORDER BY age ASC;
+
+-- Ordena todos los datos de la tabla "users" por edad de manera descendente
+SELECT * FROM users ORDER BY age DESC;
+
+-- Obtiene todos los datos de la tabla "users" con email igual a sara@gmail.com y los ordena por edad de manera descendente
+SELECT * FROM users WHERE email='sara@gmail.com' ORDER BY age DESC;
+
+-- Obtiene todos los nombres de la tabla "users" con email igual a sara@gmail.com y los ordena por edad de manera descendente
+SELECT name FROM users WHERE email='sara@gmail.com' ORDER BY age DESC;
