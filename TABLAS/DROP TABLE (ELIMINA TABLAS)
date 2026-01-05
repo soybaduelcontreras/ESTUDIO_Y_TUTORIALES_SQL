@@ -1,0 +1,10 @@
+/*
+DROP TABLE : El comando DROP TABLE en SQL se utiliza para eliminar permanentemente 
+             una tabla existente de una base de datos, borrando tanto su estructura
+            (columnas y tipos de datos) como todos los datos que contiene, junto con índices, 
+            disparadores y restricciones asociadas; es una operación irreversible que requiere precaución,
+            a menos que se tenga una copia de seguridad. 
+*/
+
+-- Elimina la tabla llamada "persons8"
+DROP TABLE persons8;
