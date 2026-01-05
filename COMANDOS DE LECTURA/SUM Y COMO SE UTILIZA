@@ -1,0 +1,8 @@
+/*
+SUM: En SQL se utiliza para calcular la suma total de valores numéricos en una columna específica de una tabla,
+     devolviendo un único valor que representa ese total, siendo ideal para obtener subtotales, 
+     totales de ventas, salarios o cualquier dato numérico, y se usa frecuentemente con GROUP BY para sumar por categorías. 
+*/
+
+-- Suma todos los valores del campo edad de la tabla "users"
+SELECT SUM(age) FROM users;
