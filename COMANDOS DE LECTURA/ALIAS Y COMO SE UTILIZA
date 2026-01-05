@@ -1,0 +1,11 @@
+/*
+ALIAS : En SQL, un alias se utiliza para asignar un nombre temporal y alternativo a tablas o columnas,
+        haciendo las consultas más cortas, legibles y fáciles de mantener, especialmente en uniones (JOINs),
+        funciones agregadas y autouniones, reemplazando nombres largos o complejos por "apodos" más convenientes. 
+*/
+
+-- Establece el alias 'Fecha de inicio en programación' a la columna init_date
+SELECT name, init_date AS 'Fecha de inicio en programación' FROM users WHERE name = 'Brais'
+
+-- Consulta igual que la anterior. Representa la posibilidad de usar comillas dobles para cadenas
+SELECT name, init_date AS "Fecha de inicio en programación" FROM users WHERE name = "Brais"
