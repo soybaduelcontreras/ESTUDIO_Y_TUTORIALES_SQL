@@ -1,0 +1,18 @@
+/*
+GROUP BY : En SQL se utiliza para agrupar filas que tienen los mismos valores en una o más columnas,
+           permitiendo aplicar funciones de agregación (como SUM, COUNT, AVG, MAX, MIN) a cada grupo para obtener resultados resumidos,
+           como el total de ventas por región o el promedio de salarios por departamento, 
+           facilitando el análisis de datos en grandes conjuntos. 
+*/
+
+-- Agrupa los resultados por edad diferente
+SELECT MAX(age) FROM users GROUP BY age
+
+-- Agrupa los resultados por edad diferente y cuenta cuantos registros existen de cada una
+SELECT COUNT(age), age FROM users GROUP BY age
+
+-- Agrupa los resultados por edad diferente, cuenta cuantos registros existen de cada una y los ordena
+SELECT COUNT(age), age FROM users GROUP BY age ORDER BY age ASC
+
+-- Agrupa los resultados por edad diferente mayor de 15, cuenta cuantos registros existen de cada una y los ordena
+SELECT COUNT(age), age FROM users WHERE age > 15 GROUP BY age ORDER BY age ASC
