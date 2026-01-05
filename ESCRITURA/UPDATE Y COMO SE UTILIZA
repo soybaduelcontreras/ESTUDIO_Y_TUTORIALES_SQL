@@ -1,0 +1,16 @@
+/*
+UPDATE : La sentencia UPDATE en SQL se utiliza para modificar registros existentes 
+         dentro de una tabla de base de datos, permitiendo cambiar los valores de 
+         una o varias columnas para filas específicas, o para todas ellas si no se 
+         especifica una condición, usando la cláusula SET para los nuevos valores 
+         y WHERE para filtrar los registros a actualizar. 
+*/
+
+-- Estable el valor 21 para la edad del registro de la tabla "users" con identificador igual a 11
+UPDATE users SET age = '21' WHERE user_id = 11
+
+-- Estable el valor 20 para la edad del registro de la tabla "users" con identificador igual a 11
+UPDATE users SET age = '20' WHERE user_id = 11
+
+-- Estable edad y una fecha para registro de la tabla "users" con identificador igual a 11
+UPDATE users SET age = 20, init_date = '2020-10-12' WHERE user_id = 11
