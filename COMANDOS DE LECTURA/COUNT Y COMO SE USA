@@ -1,0 +1,12 @@
+/*
+COUNT : En SQL se usa para contar el número de filas que cumplen una condición o el total de filas en una tabla,
+        siendo una función de agregación crucial para obtener información sobre el tamaño y
+        la frecuencia de los datos en una base de datos, como el número de registros,
+        el total de valores no nulos en una columna, o el número de valores únicos. 
+*/
+
+-- Cuenta cuantas filas contiene la tabla "users"
+Select COUNT(*) FROM users;
+
+-- Cuenta cuantas filas contienen un dato no nulo en el campo edad de la tabla "users"
+Select COUNT(age) FROM users;
