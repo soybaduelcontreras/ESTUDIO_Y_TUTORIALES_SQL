@@ -1,0 +1,10 @@
+/*
+DROP DATABASE : En SQL se utiliza para eliminar permanentemente una base de datos completa, 
+               borrando su nombre, todos los datos que contiene (tablas, vistas, índices) y 
+               su directorio físico en el servidor; es una acción irreversible y muy potente 
+               que requiere precaución y permisos especiales, no se puede deshacer y usualmente
+               no se puede ejecutar mientras se está conectado a la base de datos que se desea borrar. 
+*/
+
+-- Elimina la base de datos llamada "test"
+DROP DATABASE test;
