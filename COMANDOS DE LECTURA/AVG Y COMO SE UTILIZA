@@ -1,0 +1,10 @@
+/*
+AVG : En SQL se utiliza para calcular el valor promedio (la media aritmética) 
+     de un conjunto de valores en una columna numérica específica de una tabla, 
+     sumando todos los valores no nulos y dividiéndolos por el número de valores existentes,
+     siendo útil para análisis estadísticos y resúmenes de datos como promedios de precios,
+     salarios o calificaciones. 
+*/
+
+-- Obitne la media de edad de la tabla "users"
+Select AVG(age) FROM users;
