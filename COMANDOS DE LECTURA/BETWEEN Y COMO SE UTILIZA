@@ -1,0 +1,10 @@
+/*
+BETWEEN : En SQL se utiliza para seleccionar valores que están dentro de un rango específico (incluyendo los límites),
+          siendo muy útil en la cláusula WHERE para filtrar datos numéricos, 
+          fechas o texto de manera eficiente sin usar múltiples operadores de comparación (>= y <=). 
+          Funciona para seleccionar filas donde una columna esté entre dos valores dados, 
+          como precios, fechas de registro o códigos postales. 
+*/
+
+-- Ordena todos los datos de la tabla "users" con edad comprendida entre 20 y 30
+SELECT * FROM users WHERE age BETWEEN 20 AND 30
