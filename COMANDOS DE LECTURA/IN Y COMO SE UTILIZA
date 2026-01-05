@@ -1,0 +1,9 @@
+/*
+IN : En SQL se utiliza en la cláusula WHERE para filtrar registros cuya columna coincida con cualquiera
+     de los valores de una lista especificada, funcionando como una forma abreviada y 
+     más legible de múltiples condiciones OR (por ejemplo, WHERE columna IN ('valor1', 'valor2')
+     es igual a WHERE columna = 'valor1' OR columna = 'valor2'), o incluso con una subconsulta.
+*/
+
+-- Ordena todos los datos de la tabla "users" con nombre igual a brais y sara
+SELECT * FROM users WHERE name IN ('brais', 'sara')
