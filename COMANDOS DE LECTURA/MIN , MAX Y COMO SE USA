@@ -1,0 +1,12 @@
+/*
+MIN, MAX : En SQL, MIN() y MAX() son funciones de agregación que se usan para encontrar el valor más bajo (mínimo)
+           y el valor más alto (máximo) en una columna de datos, respectivamente, ya sean números,
+           fechas o texto; son muy útiles para análisis rápidos, identificar rangos, tendencias o anomalías en tablas,
+           combinándose con cláusulas como WHERE, GROUP BY o HAVING para consultas más específicas. 
+*/
+
+-- Obtiene el valor menor del campo edad de la tabla "users"
+Select MIN(age) FROM users;
+
+-- Obtiene el valor mayor del campo edad de la tabla "users"
+Select MAX(age) FROM users;
