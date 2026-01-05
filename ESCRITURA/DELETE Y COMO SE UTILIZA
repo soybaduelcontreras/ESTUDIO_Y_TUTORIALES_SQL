@@ -1,0 +1,9 @@
+/*
+DELETE : En SQL se utiliza para eliminar permanentemente una o varias filas (registros)
+         de una tabla de la base de datos, siendo crucial usar la cláusula WHERE para especificar
+         qué filas borrar; sin ella, se eliminan todos los registros de la tabla, siendo un comando
+         potente que debe usarse con precaución para evitar pérdida de datos irreversible. 
+*/
+
+-- Elimina el registro de la tabla "users" con identificador igual a 11
+DELETE FROM users WHERE user_id = 11;
