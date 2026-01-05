@@ -1,0 +1,11 @@
+/*
+HAVING : La cláusula HAVING en SQL se utiliza para filtrar grupos de registros después de que se han agrupado 
+         con GROUP BY, aplicando condiciones a los valores agregados (como SUM(), COUNT(), AVG()) que no se pueden filtrar con WHERE.
+         Mientras WHERE filtra filas individuales antes de la agrupación, HAVING filtra los resultados de esas agrupaciones,
+         permitiéndote mostrar solo los grupos que cumplen ciertos criterios agregados, 
+         como "mostrar solo los productos con más de 10 ventas". 
+
+*/
+
+-- Cuenta cuantas filas contienen un dato no nulo en el campo edad de la tabla "users" mayor que 3
+SELECT COUNT(age) FROM users HAVING COUNT(age) > 3
