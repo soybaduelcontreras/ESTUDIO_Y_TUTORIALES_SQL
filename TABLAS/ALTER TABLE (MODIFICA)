@@ -1,0 +1,50 @@
+/*
+ALTER TABLE : En SQL se utiliza para modificar la estructura de una tabla 
+              existente en una base de datos, permitiendo acciones como añadir
+              nuevas columnas, eliminar columnas, cambiar el tipo de datos o 
+              el nombre de columnas, y agregar o eliminar restricciones 
+             (como claves primarias o foráneas) sin tener que borrar y recrear 
+             la tabla ni perder los datos que ya contiene, adaptando así la tabla 
+             a requisitos cambiantes. 
+*/
+
+/*
+ADD : En SQL, ADD se utiliza principalmente con ALTER TABLE para modificar la estructura
+      de una tabla, permitiendo añadir nuevas columnas, restricciones (como claves primarias o foráneas),
+      o índices a una tabla existente. También existe la función DATEADD para realizar operaciones
+      de fecha y hora, sumando o restando intervalos de tiempo, pero el ADD como comando DDL se usa para
+      cambios en la estructura de la tabla. 
+*/
+-- ADD: Añade un nuevo atributo surname a la tabla "persons8"
+ALTER TABLE persons8
+ADD surname varchar(150);
+
+/*
+RENAME COLUMN : En SQL se utiliza para cambiar el nombre de una columna existente en una tabla sin perder los datos,
+                mejorando la legibilidad, coherencia y claridad de la base de datos, y se suele usar dentro de la sentencia
+                ALTER TABLE para modificar la estructura de la tabla. 
+*/
+
+-- RENAME COLUMN: Renombra el atributo surname a description en la tabla "persons8"
+ALTER TABLE persons8
+RENAME COLUMN surname TO description;
+
+/*
+MODIFY COLUMN : En SQL se utiliza para cambiar la definición
+                de una columna existente en una tabla, como su tipo de dato (ej. de INT a BIGINT), 
+                tamaño (ej. de VARCHAR(50) a VARCHAR(100)), o propiedades como NOT NULL, NULL, o valores por defecto,
+                permitiendo adaptar la estructura de la tabla a nuevas necesidades sin crearla de nuevo. 
+*/
+-- MODIFY COLUMN: Modifica el tipo de dato del atributo description en la tabla "persons8"
+ALTER TABLE persons8
+MODIFY COLUMN description varchar(250);
+/*
+DROP COLUMN : En SQL se utiliza para eliminar permanentemente una columna específica de una tabla existente,
+              modificando su estructura y borrando todos los datos que contenía esa columna, y se usa dentro
+              de un comando ALTER TABLE para ajustar el esquema de la base de datos cuando una columna ya no 
+              es necesaria o está obsoleta, requiriendo precaución debido a la pérdida irreversible de datos. 
+*/
+
+-- DROP COLUMN: Elimina el atributo description en la tabla "persons8"
+ALTER TABLE persons8
+DROP COLUMN description;
