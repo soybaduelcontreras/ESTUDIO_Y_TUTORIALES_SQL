@@ -1,0 +1,11 @@
+/*
+CONCAT : En SQL se utiliza para unir (concatenar) dos o más cadenas de texto (valores de columnas o literales)
+         en una sola cadena, permitiendo combinar datos como nombres y apellidos, crear mensajes personalizados,
+         o formar identificadores únicos a partir de múltiples campos en una consulta. 
+*/
+
+-- Concatena en una sola columa los campos nombre y apellido
+SELECT CONCAT('Nombre: ', name, ', Apellidos: ', surname) FROM users
+
+-- Concatena en una sola columa los campos nombre y apellido y le establece el alias 'Nombre completo'
+SELECT CONCAT('Nombre: ', name, ', Apellidos: ', surname) AS 'Nombre completo' FROM users
