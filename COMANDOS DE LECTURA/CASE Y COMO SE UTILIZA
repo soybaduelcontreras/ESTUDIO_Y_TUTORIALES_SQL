@@ -1,0 +1,23 @@
+/*
+CASE : En SQL se utiliza para implementar lógica condicional dentro de las consultas,
+       funcionando como un if-then-else para evaluar múltiples condiciones y devolver un resultado específico
+       cuando una condición se cumple, permitiendo crear nuevas columnas, agrupar datos o transformar valores
+       en las cláusulas SELECT, UPDATE, ORDER BY, y HAVING. 
+*/
+
+-- Obtiene todos los datos de la tabla "users" y establece condiciones de visualización de cadenas de texto según el valor de la edad 
+SELECT *,
+CASE 
+	WHEN age > 18 THEN 'Es mayor de edad'
+    WHEN age = 18 THEN 'Acaba de cumplir la mayoría de edad'
+    ELSE 'Es menor de edad'
+END AS '¿Es mayor de edad?'
+FROM users;
+
+-- Obtiene todos los datos de la tabla "users" y establece condiciones de visualización de valores booleanos según el valor de la edad 
+SELECT *,
+CASE 
+	WHEN age > 17 THEN True
+    ELSE False
+END AS '¿Es mayor de edad?'
+FROM users;
